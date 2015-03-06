@@ -1,3 +1,4 @@
+#!/usr/bin/env python2.7
 import os
 from setuptools import setup
 
@@ -33,6 +34,6 @@ setup(
     ],
     entry_points='''
         [console_scripts]
-        didit=pydidit:cli
+        didit=pydidit.cli:cli
     ''',
 )

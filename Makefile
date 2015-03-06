@@ -5,10 +5,10 @@ clean:
 
 venv:
 	virtualenv venv
-	. venv/bin/activate
-	pip install --editable .
+	bash -c ". venv/bin/activate \
+	pip install --editable ."
 
 test: venv
 	bash -c ". venv/bin/activate \
-	didit \
+	pyflakes pydidit && didit \
 	deactivate"
