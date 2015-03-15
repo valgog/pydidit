@@ -10,17 +10,9 @@ from setuptools import setup
 def read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
-
-def read_version(package):
-    data = {}
-    with open(os.path.join(package, '__init__.py'), 'r') as fd:
-        exec(fd.read(), data)
-    return data['__version__']
-
-
 setup(
     name="pydidit",
-    version=read_version("pydidit"),
+    version="0.1",
     author="Valentine Gogichashvili",
     author_email="valgog@gmail.com",
     description=("A simple command line script to publish to iDoneThis"),
