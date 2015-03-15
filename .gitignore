@@ -1,9 +1,10 @@
 # Python
 *.pyc
 *.egg-info
+dist
 
 # virtualenv
-venv
+venv*
 
 # IntelliJ IDEA
 .idea

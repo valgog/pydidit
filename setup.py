@@ -11,9 +11,16 @@ def read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
 
+def read_version(package):
+    data = {}
+    with open(os.path.join(package, '__init__.py'), 'r') as fd:
+        exec(fd.read(), data)
+    return data['__version__']
+
+
 setup(
     name="pydidit",
-    version="0.0.1",
+    version=read_version("pydidit"),
     author="Valentine Gogichashvili",
     author_email="valgog@gmail.com",
     description=("A simple command line script to publish to iDoneThis"),
@@ -23,9 +30,14 @@ setup(
     py_modules=['pydidit'],
     long_description=read('README.rst'),
     classifiers=[
-        "Development Status :: 3 - Alpha",
-        "Topic :: Productivity",
+        "Development Status :: 4 - Beta",
+        "Environment :: Console",
+        "Topic :: Office/Business :: Scheduling",
         "License :: OSI Approved :: BSD License",
+        "Programming Language :: Python :: 2",
+        "Programming Language :: Python :: 2.7",
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.4",
     ],
     install_requires=[
         'Click',
