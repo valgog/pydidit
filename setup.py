@@ -1,5 +1,6 @@
 #!/usr/bin/env python2.7
 import os
+import inspect
 from setuptools import setup
 
 __location__ = os.path.join(os.getcwd(), os.path.dirname(inspect.getfile(inspect.currentframe())))
