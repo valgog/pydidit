@@ -12,7 +12,7 @@ def read(fname):
 
 setup(
     name="pydidit",
-    version="0.1",
+    version="0.1.1",
     author="Valentine Gogichashvili",
     author_email="valgog@gmail.com",
     description=("A simple command line script to publish to iDoneThis"),
