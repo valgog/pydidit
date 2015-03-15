@@ -23,9 +23,9 @@ pydidit uses environment variables to configure the default behaviour.
 +----------------------+------------------------+---------------------------------+
 | Environment variable | Command line parameter | Description                     |
 +======================+========================+=================================+
-| ``DIDIT_TEAM``       | --team                 | iDoneThis team to post to       |
+| ``DIDIT_TEAM``       | ``--team``             | iDoneThis team to post to       |
 +----------------------+------------------------+---------------------------------+
-| ``DIDIT_API_TOKEN``  | --api-token            | API token to use                |
+| ``DIDIT_API_TOKEN``  | ``--api-token``        | API token to use                |
 +----------------------+------------------------+---------------------------------+
 
 You can add the following lines to your ``.bashrc`` or ``.zshrc`` shell initialization scripts::
