@@ -10,7 +10,7 @@ venv:
 
 venv3:
 	pyvenv venv3
-	bash -c ". venv/bin/activate \
+	bash -c ". venv3/bin/activate \
 	pip3 install --editable ."
 
 test: venv

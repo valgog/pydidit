@@ -14,14 +14,14 @@ def read(fname):
 
 setup(
     name="pydidit",
-    version="0.1.3",
+    version="0.1.4",
     author="Valentine Gogichashvili",
     author_email="valgog@gmail.com",
     description=("A simple command line script to publish to iDoneThis"),
     license="Apache 2.0",
     keywords="todo idonethis",
     url="http://www.github.com/valgog/pydidit",
-    py_modules=['pydidit'],
+    packages=['pydidit'],
     long_description=read('README.rst'),
     classifiers=[
         "Development Status :: 4 - Beta",
