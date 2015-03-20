@@ -43,8 +43,8 @@ setup(
         "Programming Language :: Python :: 3.4",
     ],
     install_requires=[
-        'Click',
-        'requests',
+        'Click >= 3.3',
+        'requests >= 2.4.3',
         'colorama'
     ],
     entry_points='''

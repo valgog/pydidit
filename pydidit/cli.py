@@ -139,7 +139,7 @@ def cli(config, team, api_token, test_api_token, done):
         teams = get_user_teams(config)
         if teams:
             if len(teams) == 1:
-                config.team = iter(teams).next()
+                config.team = next(iter(teams))
             else:
                 raise click.ClickException('user is a member of more then one team ({}). team should be configured using {}!'.format(', '.join(teams), HINT_API_TOKEN))
         else:
